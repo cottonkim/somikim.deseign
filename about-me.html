@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/common.css">
+    <link rel="stylesheet" type="text/css" href="css/content.css">
+
+    <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.4/dist/web/static/pretendard.css" />
+    <link rel="stylesheet" type="text/css" href="https://eduon.com/css/xeicon/xeicon.css">
+
+
+    <!-- 페이드인 -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <script src="https://unpkg.com/typeit@8.7.0/dist/index.umd.js"></script>
+    <script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
+
+    <link rel="shortcut icon" href="../../images/favi/favicon.ico"> <!--추가-->
+    <link rel="apple-touch-icon" sizes="57x57" href="../../images/favi/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="../../images/favi/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="../../images/favi/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="../../images/favi/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="../../images/favi/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="../../images/favi/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="../../images/favi/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="../../images/favi/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="../../images/favi/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="../../images/favi/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../../images/favi/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="../../images/favi/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../../images/favi/favicon-16x16.png">
+    <link rel="manifest" href="../../images/favi/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="../../images/favi/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+
+    <title>About me</title>
+</head>
+
+<body>
+    <header class="site-header fixed">
+        <div class="container">
+            <a class="site-branding main-logo" href="">
+                <div class="site-logo"></div>
+            </a>
+            <nav class="site-navigaion main-navigation">
+                <ul id="menu-gnb-pc" class="gnb">
+                    <li id="menu-item-01" class="menu-item">
+                        <a class="works" href="index.html">Works</a>
+                        <ul id="menu-gnb-pc-sub" class="menu-item-01-sub sub-menu">
+                            <li><a href="#">part-01</a></li>
+                            <li><a href="#">part-02</a></li>
+                            <li><a href="#">part-03</a></li>
+                            <li><a href="#">part-04</a></li>
+                            <li><a href="#">part-05</a></li>
+                        </ul>
+                    </li>
+                    <li id="menu-item-02" class="menu-item"><a class="about-me active" href="about-me.html">About me</a></li>
+                    <li id="menu-item-03" class="menu-item"><a class="resume" href="resume.html">Resume</a></li>
+                </ul>
+                <!-- <div class="nav-right">
+                    <a href="#" class="button">who I am</a>
+                    <a href="#" class="button">contect</a>
+                </div> -->
+            </nav>
+        </div>
+        <!-- 서브메뉴 페이드인 -->
+        <script>
+            $(".sub-menu").hide();
+            $(".menu-item").mouseenter(function(){
+                $(this).children(".sub-menu").stop().fadeIn(200);
+                });
+                $(".menu-item").mouseleave(function(){
+                $(this).children(".sub-menu").stop().fadeOut(100);
+                });
+        </script>
+    </header>
+
+    <div class="about-me__container content-margin">
+        <div class="inner">
+            <section class="profile">
+                <div class="profile__img"><img src="images/somikim.png"></div>
+                <div class="profile__int">
+                    <h3>I am a product (UX/UI) designer who is constantly learning.</h3>
+                    <p class="text-content">
+                        Hello!
+                        I am currently working as a UX/UI designer at Sejin Edu(in South Korea), designing Web/Mobile pages in the Online Education Industry.<br>                    
+                        I approach design problems to bring people’s lives full of meaningful experiences through great products.<br>
+                        My goal is to develop deep empathy for people and create delightful experiences that intuitive and user-friendly design.
+                    </p>
+                    <div class="intro__btn">
+                        <button type="button" onclick="window.open('somikim_cv.pdf');" class="cv btn--light">resume</button>
+                        <button type="button" onclick="window.open('mailto:somikim.design@gmail.com');" class="contact btn--deep">contact</button>
+                    </div>
+                </div>
+            </section>
+            <section class="rolling pictures"></section>
+        </div>
+    </div>
+
+    <footer class="site-footer" role="contentinfo">
+        <section>
+            <div class="footer__container">
+                <div class="footer-text">
+                    <h2>Let’s work together.</h2>
+                    <h3>somikim.design@gmail.com</h3>
+                    <p class="copyright">© 2022 Somi Kim. All rights reserved.</p>
+                </div>
+                <div class="footer__contact">
+                    <a target="_blank" href="https://linkedin.com/in/somikim-design"><i class="xi-linkedin"></i></a>
+                    <a target="_blank" href="somikim.design@google.com"><i class="xi-mail-o"></i></a>
+                    <a target="_blank" href="https://blog.naver.com/designbasekorea"><i class="xi-call"></i></a>
+                </div>
+    
+            </div>
+        </section>
+    </footer>
+
+    <a class="top-btn"><i class="xi-arrow-up"></i></a>
+
+    <script>
+        $(function(){$(".top-btn").hide();
+            $(window).scroll(function(){
+                if($(this).scrollTop() > 500){$(".top-btn").fadeIn();}
+                else{$(".top-btn").fadeOut();}
+            });
+            $(".top-btn").click(function(){
+                $('html, body').animate({
+                scrollTop : 0
+            }, 400);
+            return false;
+            });
+        });  
+    </script>
+
+    <!-- 스크립트 -->
+    <script>
+    // 헤더 숨기기
+        var didScroll;
+        var lastScrollTop = 0;
+        var delta = 4;
+        var navbarHeight = $('header').outerHeight();
+
+        $(window).scroll(function(event){
+            didScroll = true;
+        });
+
+        setInterval(function() {
+            if (didScroll) {
+                hasScrolled();
+                didScroll = false;
+            }
+        }, 250);
+
+        function hasScrolled() {
+            var st = $(this).scrollTop();
+            
+            // Make sure they scroll more than delta
+            if(Math.abs(lastScrollTop - st) <= delta)
+                return;
+            
+            // If they scrolled down and are past the navbar, add class .nav-up.
+            // This is necessary so you never see what is "behind" the navbar.
+            if (st > lastScrollTop && st > navbarHeight){
+                // Scroll Down
+                $('header').removeClass('nav-down').addClass('nav-up');
+            } else {
+                // Scroll Up
+                if(st + $(window).height() < $(document).height()) {
+                    $('header').removeClass('nav-up').addClass('nav-down');
+                }
+            }
+            
+            lastScrollTop = st;
+        }
+    </script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+</html>
