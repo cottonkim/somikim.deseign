@@ -1500,6 +1500,65 @@
             <input type="hidden" name="server_file" id="comm_down_server_file">
         </form>
 
+        <script type="text/javascript">
+
+            // 파일 다운로드
+            function toDownLoadCommTarget(org_file, server_file) {
+                var f = document.comm_down_frm;
+
+                f.org_file.value = org_file;
+                f.server_file.value = server_file;
+                f.action = "/common_bbs_controller/comm_down_file/";
+                f.submit();
+            }
+
+            //메인 롤링 배너
+            function toKollusCommPlay(title, movkey) {
+                if (title == "") {
+                    title = "샘플영상";
+                }
+
+                if (movkey != "" && movkey !== undefined) {
+                    var mov_contents = "<iframe width='100%' height='100%' src='https://v.kr.kollus.com/" + movkey + "?autoplay=a' frameborder='0' allowfullscreen=''></iframe>";
+
+                    $("#main_popup_title").html(title);
+                    $("#main_popup_mov").html(mov_contents);
+
+                    $('.popup_wrap_mov').show();
+
+                } else {
+                    alert('준비중입니다.');
+                }
+                return false;
+            }
+
+            function toYoutubeCommPlay(strTitle, movkey) {
+
+                if (strTitle == "") {
+                    strTitle = "샘플영상";
+                }
+
+                if (movkey != "" && movkey !== undefined) {
+                    var mov_contents = "<iframe id='movYoutubePlayerComm' width='100%' height='100%' src='https://www.youtube.com/embed/" + movkey + "?enablejsapi=1&autoplay=1' frameborder='0' allowfullscreen=''></iframe>";
+
+                    $("#main_popup_title").html(strTitle);
+                    $("#main_popup_mov").html(mov_contents);
+
+                    $('.popup_wrap_mov').show();
+
+                } else {
+                    alert('준비중입니다.');
+                }
+                return false;
+            }
+
+            function toKollusCommClose() {
+                $("#main_popup_title").html("");
+                $("#main_popup_mov").html("");
+                $('.popup_wrap_mov').hide();
+            }
+
+        </script>
 
         <!-- Contact Us js -->
         <script>
