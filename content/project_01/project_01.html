@@ -27,21 +27,7 @@
     <link rel="stylesheet" type="text/css" href="https://eduon.com/css/xeicon/xeicon.css">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
-
-
-    <script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/jquery.validate.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
-    <script src="jquery.validate.min.js"></script>
-    <script type="text/javascript" src="https://eduon.com/js/jquery.bxslider.min.js"></script>
-
-    <script type="text/javascript" src="https://eduon.com/js/brand/yusangtong/pc_2019/main.js"></script>
-    <script type="text/javascript" src="https://eduon.com/js/h_common.js"></script>
-
-    <script type="text/javascript" src="https://cottonkim.github.io/somikim.deseign/js/studio_ui.js" defer></script>
-    <script type="text/javascript" src="https://cottonkim.github.io/somikim.deseign/js/somi.js" defer></script>
-
-
-
+    <!-- <script type="text/javascript" src="https://eduon.com/js/jquery.bxslider.min.js"></script> -->
 
     <script src="https://unpkg.com/typeit@8.7.0/dist/index.umd.js"></script>
 
@@ -679,7 +665,9 @@
                                 style="font:normal normal 400 12px/normal dotum, sans-serif; width:1200px; height:432px; color:#333; position:relative">
                                 <div style="height: 400px;">
                                     <a href="https://map.kakao.com/?urlX=514653.0&amp;urlY=1124358.0&amp;itemId=1118741545&amp;q=%EC%84%B8%EC%A7%84%EC%97%90%EB%93%80&amp;srcid=1118741545&amp;map_type=TYPE_MAP&amp;from=roughmap"
-                                        target="_blank"><img class="map" src="#" width="1198px" height="398px"></a>
+                                        target="_blank"><img class="map"
+                                            src="https://t1.daumcdn.net/roughmap/imgmap/de6f6680ee51049adb1ed1a142e04b94ee3a29f00cb33e0876c3e2ca0e8d75d5"
+                                            width="1198px" height="398px"></a>
                                 </div>
                             </div>
                         </div>
@@ -877,7 +865,8 @@
                 </nav>
                 <div class="menu__snb__m">
                     <div class="snb-top">
-                        <span class="logo"><img src="images/somi__logo.png" alt="로고"></span>
+                        <span class="logo"><img src="https://cottonkim.github.io/somikim.deseign/images/somi__logo.png"
+                                alt="로고"></span>
                         <button class="menu_close"><i class="xi-close"></i></button>
                     </div>
                     <ul class="snb__menu">
@@ -1412,7 +1401,7 @@
         </main>
 
         <!-- TOP -->
-        <script type="text/javascript">
+        <!-- <script type="text/javascript">
             (function () {
                 jQuery.fn.scrollStopped = function (callback) {
                     var that = this, $this = $(that);
@@ -1439,12 +1428,12 @@
                 }
 
             }).trigger('scroll');
-        </script>
+        </script> -->
     </div>
 
 
     <!-- 헤더 서브메뉴 페이드인 -->
-    <script>
+    <!-- <script>
         $(".gnb__items-sub").hide();
         $(".gnb__items").mouseenter(function () {
             $(this).children(".gnb__items-sub").stop().fadeIn(200);
@@ -1452,10 +1441,10 @@
         $(".gnb__items").mouseleave(function () {
             $(this).children(".gnb__items-sub").stop().fadeOut(100);
         });
-    </script>
+    </script> -->
 
     <!-- 헤더 컬러 변경 -->
-    <script type="text/javascript">
+    <!-- <script type="text/javascript">
         $(window).on('scroll', function () {
             if ($(window).scrollTop()) {
                 $('.eduon-studio__header').addClass('header--light-mode');
@@ -1463,10 +1452,10 @@
                 $('.eduon-studio__header').removeClass('header--light-mode');
             }
         });
-    </script>
+    </script> -->
 
     <!-- Portfolio -->
-    <script>
+    <!-- <script>
         jQuery(function ($) {
             var portfolioBox = $('.portfolio__items:nth-child(n+7)');
             portfolioBox.each(function () {
@@ -1482,7 +1471,7 @@
                 }
             });
         });
-    </script>
+    </script> -->
 
     <!-- sample 팝업 -->
     <div class="popup_wrap_mov" style="display:none;">
@@ -1500,68 +1489,8 @@
             <input type="hidden" name="server_file" id="comm_down_server_file">
         </form>
 
-        <script type="text/javascript">
-
-            // 파일 다운로드
-            function toDownLoadCommTarget(org_file, server_file) {
-                var f = document.comm_down_frm;
-
-                f.org_file.value = org_file;
-                f.server_file.value = server_file;
-                f.action = "/common_bbs_controller/comm_down_file/";
-                f.submit();
-            }
-
-            //메인 롤링 배너
-            function toKollusCommPlay(title, movkey) {
-                if (title == "") {
-                    title = "샘플영상";
-                }
-
-                if (movkey != "" && movkey !== undefined) {
-                    var mov_contents = "<iframe width='100%' height='100%' src='https://v.kr.kollus.com/" + movkey + "?autoplay=a' frameborder='0' allowfullscreen=''></iframe>";
-
-                    $("#main_popup_title").html(title);
-                    $("#main_popup_mov").html(mov_contents);
-
-                    $('.popup_wrap_mov').show();
-
-                } else {
-                    alert('준비중입니다.');
-                }
-                return false;
-            }
-
-            function toYoutubeCommPlay(strTitle, movkey) {
-
-                if (strTitle == "") {
-                    strTitle = "샘플영상";
-                }
-
-                if (movkey != "" && movkey !== undefined) {
-                    var mov_contents = "<iframe id='movYoutubePlayerComm' width='100%' height='100%' src='https://www.youtube.com/embed/" + movkey + "?enablejsapi=1&autoplay=1' frameborder='0' allowfullscreen=''></iframe>";
-
-                    $("#main_popup_title").html(strTitle);
-                    $("#main_popup_mov").html(mov_contents);
-
-                    $('.popup_wrap_mov').show();
-
-                } else {
-                    alert('준비중입니다.');
-                }
-                return false;
-            }
-
-            function toKollusCommClose() {
-                $("#main_popup_title").html("");
-                $("#main_popup_mov").html("");
-                $('.popup_wrap_mov').hide();
-            }
-
-        </script>
-
         <!-- Contact Us js -->
-        <script>
+        <!-- <script>
             $(function () {
                 $("#eduon-studio__contact-us__form").validate({
                     submitHandler: function () {
@@ -1614,7 +1543,7 @@
 
 
             });
-        </script>
+        </script> -->
 
         <!-- 전화번호 자동 하이픈 -->
         <script>
@@ -1655,7 +1584,7 @@
         </script>
 
         <!-- Studio js  -->
-        <script>
+        <!-- <script>
                 (function () {
 
                     var curnum = 0;
@@ -1701,7 +1630,7 @@
                     });
                 }());
 
-        </script>
+        </script> -->
 
         <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
         <script>
