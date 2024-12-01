@@ -1,24 +1,24 @@
 @font-face {
   font-family: "Frutiger";
   font-weight: 700;
-  src: url("https://cottonkim.github.io/somikim.deseign/fonts/FrutigerLTProBlack.otf") format("opentype");
+  src: url("https://cottonkim.github.io/somikim.deseign/font/FrutigerLTProBlack.otf") format("opentype");
 }
 @font-face {
   font-family: "Frutiger";
   font-weight: 500;
-  src: url("https://cottonkim.github.io/somikim.deseign/fonts/FrutigerLTProBold.otf") format("opentype");
+  src: url("https://cottonkim.github.io/somikim.deseign/font/FrutigerLTProBold.otf") format("opentype");
 }
 
 @font-face {
   font-family: "Frutiger";
   font-weight: 400;
-  src: url("https://cottonkim.github.io/somikim.deseign/fonts/FrutigerLTProRoman.otf") format("opentype");
+  src: url("https://cottonkim.github.io/somikim.deseign/font/FrutigerLTProRoman.otf") format("opentype");
 }
 
 @font-face {
   font-family: "Frutiger";
   font-weight: 300;
-  src: url("https://cottonkim.github.io/somikim.deseign/fonts/FrutigerLTProLight.otf") format("opentype");
+  src: url("https://cottonkim.github.io/somikim.deseign/font/FrutigerLTProLight.otf") format("opentype");
 }
 
 * {
