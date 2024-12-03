@@ -310,6 +310,7 @@
 }
 
 /* project 02 */
+
 .fixBnr_tag {
   position: absolute;
   top: 0;
@@ -410,11 +411,11 @@
   background: #eff7bb;
 }
 
-.check .check_box > .inner {
+.project-pc .check .check_box > .inner {
   width: 1200px;
 }
 
-.check .check_box1 > .inner {
+.project-pc .check .check_box1 > .inner {
   width: 1200px;
   height: 1221px;
   position: relative;
@@ -438,7 +439,7 @@
   background: #f9fbee;
 }
 
-.check .check_box2 > .inner {
+.project-pc .check .check_box2 > .inner {
   width: 1200px;
   height: 1391px;
   position: relative;
@@ -458,7 +459,7 @@
   transform: translateX(-50%);
 }
 
-.check .check_box3 > .inner {
+.project-pc .check .check_box3 > .inner {
   width: 1200px;
   height: 1222px;
   position: relative;
@@ -497,7 +498,7 @@
   transform: translateX(-50%);
 }
 
-.kjw_box3 .inner {
+.project-pc .kjw_box3 .inner {
   width: 1200px;
 }
 
