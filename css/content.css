@@ -149,15 +149,6 @@
   }
 }
 
-/* .intro__img img {width: 100%; object-fit: contain;} */
-/* .intro .title {font-size: 46px; font-weight: 700; margin-bottom: 36px; overflow: hidden; line-height: 1.4;} */
-/* .intro .content{margin-bottom: 40px; font-size: 18px; opacity: 0.6;} */
-
-/* 프로젝트 제목 */
-/* .cont_title_container {margin-bottom: 100px;width: 100%; height: 100%; display: flex; gap:20px; flex-direction: column; align-content: center; flex-wrap: wrap; align-items: center;}
-.cont_title_container .cont_title {font-size: 36px; font-weight: 700;} */
-/* .cont_title_container .cont_line {width: 1px; height: 30px; background-color: #1e2724;} */
-
 .contents {
   max-width: 1280px;
   margin: 0 auto;
@@ -703,6 +694,10 @@
   margin: 66px 0 0 0;
 }
 .project-03 img {
+  width: 100%;
+}
+
+.project-03_m__container > img {
   width: 100%;
 }
 
